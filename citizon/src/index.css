@@ -1,0 +1,205 @@
+:root{
+  /* --greenish_color: #365359;
+  --golden_color: #edd5a2; */
+
+  --greenish_color: #363748;
+  --golden_color: #edd5a2;
+
+  --top-bar-button-text-size: 1.25rem; /* 20px */
+  --top-bar-button-hover-bg: #ddd;
+  --top-bar-button-hover-text-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 0rem; /* Adjust based on the height of your navbar */
+}
+
+#body-div {
+  padding: 5%;
+  background-color: white;
+  color: black;
+}
+
+#home p {
+  font-size: 1.5rem; /* x-large approximation */
+  text-align: justify;
+  padding: 0 1.25rem; /* 0 20px */
+}
+
+h1{
+  margin-top: 1rem;
+  text-align: left;
+  padding: 0.1rem 0.5rem;
+}
+
+#world_const h1{
+  margin-top: 0.5rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+/* Top header styling */
+#top-header {
+  background-color: var(--greenish_color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem; /* 20px */
+}
+
+#trending-div h1 {
+  color: var(--golden_color);
+  font-size: 1.5rem;
+  text-align: center;
+  word-break: normal;
+  font-weight: bold;
+  line-height: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+#trending-div h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-align: center;
+  word-break: normal;
+  font-weight: bold;
+  line-height: 1rem;
+  overflow-wrap: anywhere;
+}
+
+#logo-div {
+  width: 25%;
+  float: left;
+  background-color: var(--greenish_color);
+}
+
+#trending-div {
+  width: 75%;
+  height: 50%;
+}
+
+/* Styling for the logo image */
+.logo-image {
+  width: 160%; 
+  height: 160%;
+}
+
+/* Create a top navigation bar with a background color */
+#topnav {
+  background-color: var(--greenish_color);
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  /* border:1px solid var(--golden_color); */
+}
+
+/* Style the links inside the navigation bar */
+#topnav a {
+  float: left;
+  color: var(--golden_color);
+  text-align: center;
+  padding: 0.875rem 1rem; /* 14px 16px */
+  text-decoration: none;
+  font-size: var(--top-bar-button-text-size);
+}
+
+/* Change the color of links on hover */
+#topnav a:hover {
+  background-color: var(--top-bar-button-hover-bg);
+  color: var(--top-bar-button-hover-text-color);
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+#topnav a.split {
+  float: right;
+  background-color: red;
+  padding: 0.875rem 1rem; /* 14px 16px */
+  color: black;
+  margin-right: 0.625rem; /* 10px */
+}
+
+#topnav a.split:hover {
+  background-color: var(--top-bar-button-hover-bg);
+  color: var(--top-bar-button-hover-text-color);
+}
+
+#footer-div {
+  bottom: 0;
+  text-align: center;
+  padding: 1.25rem; /* 20px */
+  background-color: red;
+}
+
+.objectives-list {
+  /* font-family: Arial, sans-serif; */
+  border: 0.125rem solid #ccc; /* 2px */
+  border-radius: 0.5rem; /* 8px */
+  padding: 1.25rem; /* 20px */
+  margin: 1.25rem; /* 20px */
+}
+
+.objectives-list h2 {
+  text-align: left;
+  padding-bottom: 0.625rem; /* 10px */
+}
+
+.objectives-list ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.objectives-list li {
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.objectives-list li:before {
+  content: '•';
+  margin-right: 0.3125rem; /* 5px */
+}
+
+#footer-logo-div {
+  flex: 1 1 25%; /* Flex-grow, flex-shrink, and flex-basis */
+  width: 25%;
+}
+
+#footer-non-logo-div {
+  flex: 1 1 75%; /* Flex-grow, flex-shrink, and flex-basis */
+  width: 75%;
+}
+
+.subheading {
+  text-align: left;
+  padding: 1rem 1rem;
+  text-decoration: underline;
+}
+
+.ulist {
+  padding: 0rem 2rem;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.subpara {
+  padding-left: 3rem;
+  text-align: justify;
+}
+
+.objectives-list li {
+  font-size: 1.5rem; /* x-large approximation */
+  text-align: justify;
+}
+
+#slogan-div p {
+  font-family: 'Snell Roundhand';
+  font-size: 2rem;
+  font-weight: 300; /* Adjusted font weight to make it thin */
+  letter-spacing: 3px; /* Example value for increased letter spacing */
+}
