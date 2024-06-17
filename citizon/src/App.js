@@ -36,31 +36,31 @@ const cards = [
     image: harryProfile,
     title: "Harry S. Truman",
     biography: "Democracy alone can supply the vitalizing force to stir the peoples of the world into triumphant action, not only against their human oppressors, but also against their ancient enemies—hunger, misery, and despair.",
-    designation: "Us President"
+    designation: "US President"
   },
   {
     image: franklinProfile,
     title: "Franklin D. Roosevelt",
     biography: "We have learned, that we cannot live alone at peace. We have learned that our own well being is dependent on the well being of other nations far away. We have learned to be citizens of the world, members of the human community.",
-    designation: "Us President"
+    designation: "US President"
   },
   {
     image: billProfile,
     title: "Bill Clinton",
     biography: "[F]ree elections [alone] are not enough. Genuine, lasting democracy also requires respect for human rights, including the right to political dissent; freedom of religion and belief; an independent media capable of engaging an informed citizenry; a robust civil society; the rule of law and an independent judiciary; open and competitive economic structures; mechanisms to safeguard minorities from oppressive rule by the majority; full respect for women’s and workers’ rights; and civilian control of the military.",
-    designation: "Us President"
+    designation: "US President"
   },
   {
     image: bidenProfile,
     title: "Joe Biden",
     biography: "I firmly believe that democracy holds the key to freedom, prosperity, peace, and dignity. We must now demonstrate — with a clarity that dispels any doubt — that democracy can still deliver for our people and for people around the world. We must prove that our model isn’t a relic of history; it’s the single best way to realize the promise of our future. And, if we work together with our democratic partners, with strength and confidence, we will meet every challenge and outpace every challenger.",
-    designation: "Us President"
+    designation: "US President"
   },
   {
     image: woodrowProfile,
     title: "Woodrow Wilson",
     biography: "No peace can last, or ought to last, which does not recognize and accept the principle that governments derive all their just powers from the consent of the governed, and that no right anywhere exists to hand peoples about from sovereignty to sovereignty as if they were property.",
-    designation: "Us President"
+    designation: "US President"
   }
 ];
 
@@ -106,8 +106,8 @@ function App() {
               <div id="home">
                 {/* <h1>How we are?</h1> */}
                 <p>
-                Citizens for Constitutional Order is exactly what it suggests: a citizens-led initiative that seeks to promote peace through law. As global citizens, we are united by principles of state-religion separation, accountable government, and autonomous sub-units of state. We believe, to quote Thomas Paine, that “[g]overnment is not a trade which any man or body of men has a right to set up and exercise for [personal] emolument but is altogether a trust.” We foresee a world where all states are governed under a universal constitution backed by international law as rightly envisaged by Immanuel Kant. We stand for peace, justice, and equality for all citizens irrespective of color, creed and territory.
-                  </p>
+                  Citizens for Constitutional Order is exactly what it denotes: a citizens-led initiative that seeks to promote peace through law. As global citizens, we are united by principles of state-religion separation, accountable government, and autonomous sub-units of state. We derive insights from Thomas Paine’s observation that “[g]overnment is not a trade which any man or body of men has a right to set up and exercise for [personal] emolument but is altogether a trust.” We therefore foresee a world where all states are governed under a republican constitution backed by international law. We stand for peace, justice, and equality for all citizens irrespective of color, creed, ethnicity, and territory.
+                </p>
 
               <mission>
               <h1>Our Mission</h1>
@@ -176,7 +176,7 @@ function App() {
                   </p>
 
                 <h1>What Experts say</h1>
-                <SliderComponent cards={cards} />
+                <SliderComponent cards={cards} slidesToShow = {3}/>
               </div>
             } />
             <Route path="/contact_us" element={<ContactUs />} />

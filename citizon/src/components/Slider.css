@@ -57,6 +57,10 @@
   font-size: 14px !important; /* Adjust the font size for the biography here */
   opacity: 0;
   transition: opacity 0.3s ease;
+  max-height: 200px; /* Limit the height for the scroll */
+  overflow-y: auto; /* Enable vertical scroll */
+  text-align: justify;
+  padding: 10px 10px;
 }
 
 /* Show full biography on hover */
@@ -73,6 +77,7 @@
 .slick-next:before {
   color: #333;
   font-size: 24px;
+  margin-left: 10px;
 }
 
 .slick-prev {
@@ -80,7 +85,7 @@
 }
 
 .slick-next {
-  right: -25px;
+  right: 0px;
 }
 
 /* Footer styles */
@@ -94,19 +99,20 @@
   color: #333;
 }
 
-/* Media Queries */
+/* Media Queries
 @media (max-width: 768px) {
   .snip1584 {
     width: 100%;
   }
-}
+} */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .snip1584 img {
-    height: 100px;
+    height: 200px;
   }
-}
+} */
 
 .info span {
   color: var(--golden_color);
 }
+

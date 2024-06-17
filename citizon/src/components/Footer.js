@@ -1,4 +1,10 @@
 import React from "react";
+import { BsTwitterX } from "react-icons/bs";
+import {FaFacebook} from 'react-icons/fa'
+import {FaYoutube} from 'react-icons/fa'
+// import {FaInstagram} from 'react-icons/fa'
+
+
 import {
   Box,
   FooterContainer,
@@ -12,7 +18,7 @@ import logo from '../logos/logo_img.png'; // Ensure you have the correct path
 const Footer = () => {
   return (
     <Box>
-      <h1 style={{
+      <h3 style={{
 		marginTop: "0",
 		color: 'var(--golden_color)',
 		fontFamily: 'Garamond',
@@ -24,7 +30,7 @@ const Footer = () => {
 		overflowWrap: 'anywhere',
 	  }}>
        CITIZENS FOR CONSTITUTIONAL ORDER
-      </h1>
+      </h3>
 	  <div id="footer-logo-div">
 		<img
             src={logo}
@@ -93,29 +99,33 @@ const Footer = () => {
                     marginLeft: "10px",
                   }}
                 >
-                  Facebook
+                  <a href="https://www.facebook.com/ccnorder/" target="_blank" rel="noopener noreferrer">
+                    <FaFacebook size={30} color="var(--golden_color)" />
+                </a>
                 </span>
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            {/* <FooterLink href="#">
               <i className="fab fa-instagram">
                 <span
                   style={{
                     marginLeft: "10px",
                   }}
                 >
-                  Instagram
+                  <FaInstagram/>
                 </span>
               </i>
-            </FooterLink>
-            <FooterLink href="#">
+            </FooterLink> */}
+            <FooterLink href="https://x.com/ccnorder">
               <i className="fab fa-twitter">
                 <span
                   style={{
                     marginLeft: "10px",
                   }}
                 >
-                  Twitter
+                  <a href="https://x.com/ccnorder" target="_blank" rel="noopener noreferrer">
+                    <BsTwitterX size={30} color="var(--golden_color)" />
+                  </a>
                 </span>
               </i>
             </FooterLink>
@@ -126,7 +136,11 @@ const Footer = () => {
                     marginLeft: "10px",
                   }}
                 >
-                  Youtube
+                
+                <a href="https://x.com/ccnorder" target="_blank" rel="noopener noreferrer">
+                    <FaYoutube size={30} color="var(--golden_color)" />
+                </a>
+                
                 </span>
               </i>
             </FooterLink>
@@ -145,7 +159,7 @@ const Footer = () => {
 		lineHeight: '3.5rem',
 		overflowWrap: 'anywhere'
 	  }}>
-		&copy; The Constitutional Order Institute inc.
+		&copy; Citizens for Constitutional Order inc.
 	  </p>
     </Box>
   );
