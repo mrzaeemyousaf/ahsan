@@ -5,12 +5,12 @@ import styled from "styled-components";
 export const Box = styled.div`
 	padding: 1% 2.5%;
 	background:  #363748;
-	// position: absolute;
+	//position: absolute;
 	bottom: 0;
 	width: 100%;
 
 	@media (max-width: 1000px) {
-		// padding: 70px 30px;
+		//padding: 70px 30px;
 	}
 `;
 
@@ -20,7 +20,7 @@ export const FooterContainer = styled.div`
 	justify-content: center;
 	max-width: 1000px;
 	margin: 0 auto;
-	/* background: red; */
+	// background: red; //-----------------------------------------------
 `;
 
 export const Column = styled.div`

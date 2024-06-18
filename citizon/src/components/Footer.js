@@ -18,21 +18,9 @@ import logo from '../logos/logo_img.png'; // Ensure you have the correct path
 const Footer = () => {
   return (
     <Box>
-      <h3 style={{
-		marginTop: "0",
-		color: 'var(--golden_color)',
-		fontFamily: 'Garamond',
-		fontSize: '1.5rem',
-		textAlign: 'center',
-		wordBreak: 'normal',
-		fontWeight: 'bold',
-		lineHeight: '3.5rem',
-		overflowWrap: 'anywhere',
-	  }}>
-       CITIZENS FOR CONSTITUTIONAL ORDER
-      </h3>
 	  <div id="footer-logo-div">
-		<img
+    <a href="/">
+    <img
             src={logo}
             alt="Logo"
             style={{
@@ -42,6 +30,8 @@ const Footer = () => {
               height: "100px",
             }}
           />
+          </a>
+		
         </div>
 	
 	<div id="footer-non-logo-div">
@@ -49,23 +39,23 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>About Us</Heading>
-            <FooterLink href="#">
-              Aim
+            <FooterLink href="/about">
+              Who we are?
             </FooterLink>
-            <FooterLink href="#">
+            {/* <FooterLink href="#">
               Vision
             </FooterLink>
             <FooterLink href="#">
               Testimonials
-            </FooterLink>
+            </FooterLink> */}
           </Column>
           
           <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">
-              Writing
+            <Heading>Get Involved</Heading>
+            <FooterLink href="/get_involved">
+              Participate
             </FooterLink>
-            <FooterLink href="#">
+            {/* <FooterLink href="#">
               Internships
             </FooterLink>
             <FooterLink href="#">
@@ -73,14 +63,14 @@ const Footer = () => {
             </FooterLink>
             <FooterLink href="#">
               Teaching
-            </FooterLink>
+            </FooterLink> */}
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink href="#">
-              Uttar Pradesh
+            <FooterLink href="/contact_us">
+              Get Help
             </FooterLink>
-            <FooterLink href="#">
+            {/* <FooterLink href="#">
               Ahemdabad
             </FooterLink>
             <FooterLink href="#">
@@ -88,7 +78,7 @@ const Footer = () => {
             </FooterLink>
             <FooterLink href="#">
               Mumbai
-            </FooterLink>
+            </FooterLink> */}
           </Column>
           <Column>
             <Heading>Social Media</Heading>
@@ -100,7 +90,7 @@ const Footer = () => {
                   }}
                 >
                   <a href="https://www.facebook.com/ccnorder/" target="_blank" rel="noopener noreferrer">
-                    <FaFacebook size={30} color="var(--golden_color)" />
+                    <FaFacebook size={25} color="white" />
                 </a>
                 </span>
               </i>
@@ -124,7 +114,7 @@ const Footer = () => {
                   }}
                 >
                   <a href="https://x.com/ccnorder" target="_blank" rel="noopener noreferrer">
-                    <BsTwitterX size={30} color="var(--golden_color)" />
+                    <BsTwitterX size={25} color="white" />
                   </a>
                 </span>
               </i>
@@ -138,7 +128,7 @@ const Footer = () => {
                 >
                 
                 <a href="https://x.com/ccnorder" target="_blank" rel="noopener noreferrer">
-                    <FaYoutube size={30} color="var(--golden_color)" />
+                    <FaYoutube size={25} color="white" />
                 </a>
                 
                 </span>
@@ -151,7 +141,7 @@ const Footer = () => {
 	  </div>
 	  <p style={{
 		marginTop: "0",
-		color: 'var(--golden_color)',
+		color: 'white',
 		fontFamily: 'Garamond',
 		fontSize: '1rem',
 		textAlign: 'center',

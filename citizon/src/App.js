@@ -18,6 +18,10 @@ import bidenProfile from '../src/assets/img/binden.jpeg';
 // import ikProfile from '../assets/img/ik.jpg';
 import harryProfile from '../src/assets/img/harry.jpeg';
 import billProfile from '../src/assets/img/bill.jpeg'
+//import amblum from './assets/img/logo_amblum.png';
+import citizen_court from './assets/img/citizens_court.png';
+import Example from './components/Vision.js';
+
 
 const cards = [
   {
@@ -72,7 +76,10 @@ function App() {
         <div id="top-header">
           {/* left div */}
           <div id="logo-div">
+          <a href="/">
             <img src={logo} alt="logo" className="logo-image" />
+          </a>
+            
           </div>
 
           <div id="trending-div">
@@ -90,6 +97,7 @@ function App() {
           </div>
         </div>
 
+        
         <div id="topnav">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
@@ -97,20 +105,34 @@ function App() {
           {/* <Link to="/world_const">World Constitution</Link>
           <Link to="/visionaries">Visionaries</Link> */}
           <Link to="/contact_us">Contact Us</Link>
-          <Link to="/donation" className="split">Support Us</Link>
+          <Link to="/contact_us" className="split">Support Us</Link>
         </div>
 
-        <div id="body-div">
+        
+        
+        <div id="body-div"> 
           <Routes>
             <Route path="/" element={
               <div id="home">
                 {/* <h1>How we are?</h1> */}
+
+                <div id="top-img">
+              <div class="half-width">
+                  <img src={citizen_court} alt='citizen_court'>
+                  </img>
+              </div>
+            </div>
+        
+              
                 <p>
-                  Citizens for Constitutional Order is exactly what it denotes: a citizens-led initiative that seeks to promote peace through law. As global citizens, we are united by principles of state-religion separation, accountable government, and autonomous sub-units of state. We derive insights from Thomas Paine’s observation that “[g]overnment is not a trade which any man or body of men has a right to set up and exercise for [personal] emolument but is altogether a trust.” We therefore foresee a world where all states are governed under a republican constitution backed by international law. We stand for peace, justice, and equality for all citizens irrespective of color, creed, ethnicity, and territory.
+                  Citizens for Constitutional Order is exactly what it denotes: a citizens-led initiative that seeks to promote peace through law. As global citizens, we are united by principles of state-religion separation, accountable government, and autonomous sub-units of state. We derive insights from Thomas Paine’s observation that “[g]overnment is not a trade which any man or body of men has a right to set up and exercise for [personal] emolument but is altogether a trust.” We foresee a world where all states are governed under a republican constitution backed by international law. We stand for peace, justice, and equality for all citizens irrespective of color, creed, ethnicity, and territory.
                 </p>
 
-              <mission>
-              <h1>Our Mission</h1>
+              
+                  <h1>
+                  <span> Our Mission
+                  </span>
+                  </h1>
                 <div className="objectives-list">
                   <ul>
                     <li>Raise awareness and understanding of constitutional rights and responsibilities among citizens.</li>
@@ -118,9 +140,15 @@ function App() {
                     <li>Bring together diverse communities to work towards common goals grounded in constitutional principles.</li>
                   </ul>
                 </div>
-              </mission>
+              
 
-                <h1>Over Vision</h1>
+                <h1>
+                    <span> 
+                      Over Vision
+                    </span>
+                    
+                </h1>
+                <Example/>
                   <h2 className='subheading'>
                   We envision a world where:
                   </h2>
@@ -133,7 +161,11 @@ function App() {
                   </ul>
                 </div>
                
-                <h1>Our Core Values</h1>
+                <h1>
+              <span> 
+                Our Core Values
+              </span>
+              </h1>
                 <div className="objectives-list">
                   
                   <ul>
@@ -145,7 +177,10 @@ function App() {
                 </div>
                 
                 <h1>
-                What We Do
+                  <span>
+                  What We Do
+                  </span>
+                
                 </h1>
                 <h2 className='subheading'>
                   Educational Programs
@@ -175,10 +210,16 @@ function App() {
                   Our research team conducts in-depth studies on constitutional issues, providing valuable insights and recommendations to support our mission and vision.
                   </p>
 
-                <h1>What Experts say</h1>
+                <h1>
+                  <span>
+                  What Political Leaders Say
+                  </span>
+                  </h1>
                 <SliderComponent cards={cards} slidesToShow = {3}/>
               </div>
             } />
+
+            <Route path="/" element={<App />} />
             <Route path="/contact_us" element={<ContactUs />} />
             <Route path="/about" element={<About />} />
             <Route path="/get_involved" element={<GetInvolved />} />

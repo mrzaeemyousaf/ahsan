@@ -22,6 +22,8 @@ body {
 
 #body-div {
   padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: white;
   color: black;
 }
@@ -32,11 +34,20 @@ body {
   padding: 0 1.25rem; /* 0 20px */
 }
 
-h1{
+
+h1 {
   margin-top: 1rem;
   text-align: left;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  background-color: var(--greenish_color);
+  color: var(--golden_color);
+  display: inline; /* Apply background color only to the text */
   padding: 0.1rem 0.5rem;
 }
+
 
 #world_const h1{
   margin-top: 0.5rem;
@@ -54,7 +65,7 @@ h1{
   padding: 1.25rem; /* 20px */
 }
 
-#trending-div h1 {
+/* #trending-div h1 {
   color: var(--golden_color);
   font-size: 1.5rem;
   text-align: center;
@@ -62,7 +73,7 @@ h1{
   font-weight: bold;
   line-height: 1.5rem;
   overflow-wrap: anywhere;
-}
+} */
 
 #trending-div h3 {
   color: #ffffff;
@@ -202,4 +213,39 @@ h1{
   font-size: 2rem;
   font-weight: 300; /* Adjusted font weight to make it thin */
   letter-spacing: 3px; /* Example value for increased letter spacing */
+}
+
+/* Basic container styling */
+#top-img {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  max-width: 100%; /* Ensure container doesn't exceed viewport width */
+  overflow: hidden; /* Prevent horizontal scroll */
+  text-align: center;
+}
+
+/* Each half-width div */
+.half-width {
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 5px; /* Optional: Add padding for spacing between images */
+}
+
+/* Images inside each half-width div */
+.half-width img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Scale image to cover entire container */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .half-width {
+    width: 100%; /* Each div takes full width on mobile */
+    padding: 0; /* Adjust padding as needed for mobile view */
+  }
+
+  #top-img {
+    padding: 0; /* Remove any padding that might cause overflow */
+  }
 }

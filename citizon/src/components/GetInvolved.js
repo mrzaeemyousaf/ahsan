@@ -3,11 +3,12 @@ import React from 'react';
 const GetInvolved = () => {
   return (
     <div>
+      <article>
       <h1>Get Involved</h1>
-      <p>
+      <h3>
         Join us in our mission to promote peace through constitutional adherence. Here’s how you can get involved:
-      </p>
-
+      </h3>
+      </article>
       <div className="objectives-list">
         <ul>
           <li>
